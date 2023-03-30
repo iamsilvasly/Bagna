@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+.logo{
+    width:40px ;
+    height: auto ;
+    padding: 20px 100px;
+}
+/*css reset*/
+
+header{
+    width: 100% ;
+    display: flex;
+    justify-content: space-between ;
+    padding: 10px 30px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.black{
+    background-color: black;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    
+}
+#menu li a {
+    color: rgb(197, 197, 197) ;
+    font-size: 20px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.h3class{
+    color: antiquewhite;
+    padding-top: 10px;
+}
+.pclass{
+    color: rgb(209, 209, 195);
+    font-size: 15px;
+    font-family: roboto;
+    
+    
+}
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+    display: inline;
+    margin: auto;
+    align-items: center;
+    place-items: center;
+}
+.container{
+    position: relative;
+    align-items: center;
+    display: grid;
+    border: 1px solid;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    width: 1000spx;
+    height: 90vh;
+   /* margin: 40px;*/
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    
+}
+#home{
+    width:100%;
+    height: 60%;
+    padding: 70px 0; 
+    background: #000000 ;
+    align-items: center;
+    
+ }
+.grid-container{
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns:60%  25%;
+}
+.homespan{
+    color: aliceblue;
+    font-size: 45px ;
+    padding: 6px;
+}
+.h1home{
+    padding: 10px;
+}
+.home__price{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-left: var(--mb-0-75);
+    color: aliceblue;
+  }
+.button{
+    display: inline-block;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    transition: .3s;
+    font-size: 16px;
+  }
+  
+  .button:hover{
+    background-color: rgb(43, 42, 42);
+  }
+  
+  .button__icon{
+    font-size: 1.2rem;
+  }
+  
+  .button--flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+  }
+  .sponsor-section{
+    background-color: #000000;
+    height: 50%;
+    margin: auto;
+    padding: 15%;
+  }
+  .sponsor__img{
+    font-size: 100px;
+    color: var(--white-color);
+  }
+  .sponsor_grid{
+    padding: auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    margin: 0 0 0 0;
+    grid-template-columns:25% 25% 25% 25%;
+    
+  }
+  .sponsor_grid .fa{
+    color: rgb(255, 255, 255);
+    background: #000000;
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+  }
+  .title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #151322;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    z-index: 1;
+}
+#specs{
+background-color: rgb(0, 0, 0);
+height: 80%;
+}
+.specs-section{
+    color: #000000;
+}
+.specs_grid{
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns:60%  25%;
+    padding: 17%;
+  }
+  .specs__img{
+    width: 250px;
+    position: absolute;
+    top: 2rem;
+    right: -4rem;
+  }
+#case{
+    background-color: rgb(0, 0, 0);
+    height: 60%;
+}
+.case-grid{
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns:60%  25%;
+    padding: 17%;
+}
+/*=============== DISCOUNT ===============*/
+/* #discount{
+  background-color:red;
+  display: flex;
+  width:100%;
+  height: 60%;
+  padding: 70px 0; 
+  justify-items: center;
+  align-items: center;
+  color: #000000;
+} */
+#discount{
+  width:100%;
+  height: 60%;
+  padding: 7px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #000000;
+  
+}
+.discount__container{
+    grid-template-columns:50%  50%;
+    /* margin: 240px; */
+    width: 100vh;
+    height: 300px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(17, 17, 17);
+    padding: 2rem 1.5rem;
+    border-radius: .75rem;
+  }
+  
+  .discount__title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .discount__description{
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .discount__img{
+    width: 300px;
+    position:flex;
+    top: 50px;
+    right: -11rem;
+    align: right;
+  }
+  
+#product{
+    background-color: rgb(0, 0, 0);
+
+}
+.product__title{
+  text-align: center;
+  color: rgb(77, 69, 69);
+}
+
+.products__container{
+  grid-template-columns: repeat(3, 162px);
+  gap: 6rem 3rem;
+  padding-top: 5rem;
+}
+.products__card{
+  height: 160px;
+  background-color:rgb(17, 16, 16);
+  padding: 12px;
+  border-radius: 10px;
+  display: grid;
+  position: relative;
+}
+.products__img{
+  width: 95px;
+}
+.products__title, .products__price{
+  font-size: var(--small-font-size);
+  color:white;
+}
+.products__button{
+  font-size: 5px;
+  position:absolute;
+  right: 16px;
+  bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+h1{
+    color: rgb(70, 63, 63);
+    position: flex;
+    font-size: 60px;
+    
+}
+.footer__container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 10px;
+  }
+  
+  .footer__logo{
+    width: 2rem;
+  }
+  
+  .footer__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+  }
+  
+  .footer__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+    color: white;
+    list-style: none;
+  }
+  
+  .footer__link{
+    color: white;
+  }
+  
+  .footer__link:hover{
+    color: rgb(107, 98, 98);
+  }
+  
+  .footer__form{
+    display: flex;
+    column-gap: .5rem;
+    background-color: var(--container-color);
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-2);
+  }
+  
+  .footer__input{
+    background-color: var(--container-color);
+    width: 90%;
+    color: white;
+  }
+  
+  .footer__input::placeholder{
+    color: white;
+    font-size: var(--normal-font-size);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer__social{
+    display: flex;
+    column-gap: 1.25rem;
+  }
+  
+  .footer__social-link{
+    display: inline-flex;
+    color: white;
+    background-color: black;
+    padding: .5rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+
+  }
+  
+  .footer__social-link:hover{
+    background-color: rgb(58, 56, 56);
+   
+  }
+  
+  .footer__copy{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .footer__copy-link{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+  }
+
+  #myBtn {
+
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(54, 54, 54); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #111010; /* Add a dark-grey background on hover */
+  }
+  
